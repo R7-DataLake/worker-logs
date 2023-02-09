@@ -1,4 +1,4 @@
-import { MetaModel } from "./models/metadata"
+import { MetaModel } from "./models/log"
 
 
 
