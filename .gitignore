@@ -1,0 +1,5 @@
+node_modules/*
+config.conf
+certs/*
+dist/*
+run.sh
