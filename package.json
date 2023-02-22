@@ -10,12 +10,12 @@
   "author": "Satit Rianpit <rianpit@gmail.com>",
   "license": "GPLv3",
   "dependencies": {
-    "bullmq": "^3.7.0",
+    "bullmq": "^3.7.1",
     "knex": "^2.4.2",
     "pg": "^8.9.0"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0",
+    "@types/node": "^18.14.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-typescript": "6.0.0-alpha.1",
