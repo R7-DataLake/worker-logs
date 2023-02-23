@@ -1,5 +1,6 @@
 
 import { Worker } from 'bullmq'
+import _ from 'lodash';
 import { LogModel } from './models/log';
 
 const redisConfiguration = {
@@ -19,7 +20,10 @@ const logModel = new LogModel()
 
 const worker = new Worker('LOG', async (job: any) => {
   const data = job.data
-  await logModel.saveTransactionLog(data)
+  // console.log(data);
+  if (_.has(data, 'trx_id')) {
+    await logModel.saveTransactionLog(data);
+  }
 }, {
   limiter: {
     max: 100,
