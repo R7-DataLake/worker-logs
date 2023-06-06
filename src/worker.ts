@@ -29,6 +29,8 @@ const worker = new Worker('LOG', async (job: any) => {
     max: 100,
     duration: 1000,
   },
+  maxStalledCount: 6,
+  stalledInterval: 30000,
   concurrency: CONCURRENCY,
   connection: redisConfiguration.connection
 });
